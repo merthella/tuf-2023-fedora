@@ -1,5 +1,3 @@
----
-
 ### Post-Installation Configuration
 
 #### System Update
