@@ -1,4 +1,4 @@
-### Post-Installation Configuration
+### Post-Installation Configuration / Updated to 41
 
 #### System Update
 To ensure your system is up-to-date, run:
@@ -34,7 +34,7 @@ For media codecs and additional software, enable RPM Fusion:
 [Configuration Guide](https://rpmfusion.org/Configuration)
 Then, update core packages:
 ```bash
-sudo dnf groupupdate core
+sudo dnf group install core
 ```
 
 #### Add Flatpak
@@ -53,11 +53,11 @@ For instructions on installing NVIDIA drivers, visit:
 
 To install media codecs, use:
 ```bash
-sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf group install multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
 ```
 Then, update sound and video packages:
 ```bash
-sudo dnf groupupdate sound-and-video
+sudo dnf group install sound-and-video
 ```
 
 #### Install Apps
